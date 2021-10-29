@@ -1,0 +1,249 @@
+/*
+ * @bot-written
+ *
+ * WARNING AND NOTICE
+ * Any access, download, storage, and/or use of this source code is subject to the terms and conditions of the
+ * Full Software Licence as accepted by you before being granted access to this source code and other materials,
+ * the terms of which can be accessed on the Codebots website at https://codebots.com/full-software-licence. Any
+ * commercial use in contravention of the terms of the Full Software Licence may be pursued by Codebots through
+ * licence termination and further legal action, and be required to indemnify Codebots for any loss or damage,
+ * including interest and costs. You are deemed to have accepted the terms of the Full Software Licence on any
+ * access, download, storage, and/or use of this source code.
+ *
+ * BOT WARNING
+ * This file is bot-written.
+ * Any changes out side of "protected regions" will be lost next time the bot makes any changes.
+ */
+/* --------------------------------
+Custom bot input styling
+-------------------------------- */
+
+// % protected region % [update input if required] off begin
+/*This will enable dropdown fields requiring validation to manifest the same border red color as regular errored inputs*/
+.input-group--error{
+	.dropdown__container{
+		.dropdown__control {
+			border-color: $color-support-red;
+		}
+	}
+}
+
+/*Styling of date input */
+
+//applying a white background to all date picker types and a hover effect
+.input-group__date {
+	.enabled {
+		background-color: transparent;
+		color: get-contrasting-text-color($background);
+	}
+	.disabled {
+		background: $grey-0;
+		border: none;
+		color: get-contrasting-text-color($grey-0);
+		&:hover {
+			background: $grey-0;
+			border: none;
+			color: get-contrasting-text-color($grey-0);
+		}
+	}
+}
+
+&.flatpickr-calendar {
+    font-family: $body-font-family !important;
+    font-weight: $text-regular !important;
+    border-radius: 0 !important;
+    overflow: hidden;
+
+    &:before {
+        display: none;
+    }
+
+    &.arrowBottom:after, &.arrowBottom:after {
+        display: none;
+    }
+
+    .flatpickr-months .flatpickr-month {
+        background-color: $grey-2 !important;
+        border-radius: 0 !important;
+        * {
+            color: get-contrasting-text-color($grey-2) !important;
+        }
+    }
+
+    .flatpickr-current-month .flatpickr-monthDropdown-months {
+        background-color: transparent !important;
+        box-shadow: none;
+    }
+
+    .flatpickr-months {
+
+        .flatpickr-prev-month,
+        .flatpickr-next-month {
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: get-contrasting-text-color($grey-2) !important;
+
+                svg {
+                    fill: get-contrasting-text-color($grey-2) !important;
+                }
+            }
+
+            svg {
+                &:hover,
+                &:active,
+                &:focus {
+                    fill: get-contrasting-text-color($grey-2) !important;
+                }
+            }
+        }
+    }
+
+    .numInputWrapper {
+        input {
+            box-shadow: none !important;
+        }
+        .arrowUp,
+        .arrowDown {
+            border: none !important;
+        }
+    }
+
+    //Inner container
+    .flatpickr-innerContainer {
+        .flatpickr-rContainer .flatpickr-weekdays, .flatpickr-weekday {
+            background: $grey-2 !important;
+            color: get-contrasting-text-color($grey-2);
+        }
+    }
+
+    .flatpickr-days {
+        border: none !important;
+
+        .dayContainer {
+            background: $grey-2 !important;
+
+            * {
+                color: get-contrasting-text-color($grey-2);
+            }
+        }
+
+        .flatpickr-day {
+            border: none !important;
+            border-radius: 0 !important;
+            font-weight: $text-regular !important;
+
+            &:hover {
+                border-radius: 0 !important;
+                @include transform-timing(.25s);
+            }
+
+            &:active {
+                border: 2px solid $color-primary;
+            }
+
+            &:focus {
+                border: 2px solid $color-primary;
+            }
+
+            &.selected {
+                border-radius: 0 !important;
+                background-color: $color-primary !important;
+                color: get-contrasting-text-color($color-primary);
+            }
+
+            &.today {
+                font-weight: $text-bold !important;
+            }
+
+            &.today:not(.selected) {
+                border: none !important;
+                color: get-contrasting-text-color($background);
+
+                &:after {
+                    content: '';
+                    width: 3px;
+                    height: 3px;
+                    background-color: $color-primary;
+                }
+            }
+
+            &.inRange {
+                background-color: transparentize(get-contrasting-text-color($background), 0.3);
+                box-shadow: -5px 0 0 transparentize(get-contrasting-text-color($background), 0.3), 5px 0 0 transparentize(get-contrasting-text-color($background), 0.3) !important;
+            }
+
+            &.endRange {
+                box-shadow: none !important;
+                background: $color-primary;
+                color: get-contrasting-text-color($color-primary);
+            }
+        }
+    }
+
+    .flatpickr-calendar.hasTime .flatpickr-time {
+        border: none !important;
+        border-radius: 0 !important;
+    }
+
+    .flatpickr-time {
+        background-color: $grey-2 !important;
+        border: none !important;
+        border-radius: 0 !important;
+        max-height: unset !important;
+
+        * {
+            color: get-contrasting-text-color($grey-2);
+        }
+
+        .numInputWrapper {
+            width: max-content;
+
+            .arrowUp,
+            .arrowDown {
+                display: none !important;
+            }
+
+            input[type="number"] {
+                border: none !important;
+
+                &:hover {
+                }
+
+                &.flatpickr-hour {
+                    display: flex;
+                    margin-left: auto;
+                    margin-right: $space-xxs;
+                }
+
+                &.flatpickr-minute {
+                    display: flex;
+                    margin-right: auto;
+                    margin-left: $space-xxs;
+                    margin-top: 6px;
+                }
+            }
+
+        }
+
+        .flatpickr-time-separator {
+            margin-top: 5px ​!important;
+        }
+
+        .flatpickr-am-pm {
+            margin-top: 8px;
+
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: $grey-8;
+                color: get-contrasting-text-color($grey-8);
+            }
+        }
+    }
+}
+
+
+/* End of datepicker styles */
+// % protected region % [update input if required] end

@@ -1,0 +1,84 @@
+/*
+ * @bot-written
+ *
+ * WARNING AND NOTICE
+ * Any access, download, storage, and/or use of this source code is subject to the terms and conditions of the
+ * Full Software Licence as accepted by you before being granted access to this source code and other materials,
+ * the terms of which can be accessed on the Codebots website at https://codebots.com/full-software-licence. Any
+ * commercial use in contravention of the terms of the Full Software Licence may be pursued by Codebots through
+ * licence termination and further legal action, and be required to indemnify Codebots for any loss or damage,
+ * including interest and costs. You are deemed to have accepted the terms of the Full Software Licence on any
+ * access, download, storage, and/or use of this source code.
+ *
+ * BOT WARNING
+ * This file is bot-written.
+ * Any changes out side of "protected regions" will be lost next time the bot makes any changes.
+ */
+
+.error-info__page {
+	width: 100vw;
+	height: 100vh;
+	color: get-contrasting-text-color($background);
+	background-color: $background;
+	padding-top: 1vh;
+
+	.error-info__elements {
+		margin: 10vh 10vw;
+		text-align: center;
+
+		.error-info__heading {
+			font-size: 10rem;
+			margin: 0;
+			line-height: 10rem;
+			font-family: 'Lato', sans-serif;
+		}
+
+		.error-info__info {
+			font-size: 1.5rem;
+			margin-bottom: 5vh;
+		}
+
+		.error-info__buttons {
+			display: flex;
+			flex-direction: column;
+
+			button.error-info__btn {
+				margin-bottom: 2vh;
+			}
+		}
+
+		button.error-info__btn {
+			color: $color-primary;
+			background-color: $color-secondary;
+
+			&:hover {
+				color: $color-secondary;
+				background-color: $color-primary;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.error-info__page {
+
+		.error-info__elements {
+			text-align: left;
+			margin: 25vh 0 0 15vw;
+
+			.error-info__heading {
+				font-size: 18rem;
+				line-height: 17rem;
+			}
+
+			.error-info__buttons {
+			flex-direction: row;
+
+			button.error-info__btn {
+				margin-bottom: 0;
+				margin-right: 2vw
+			}
+		}
+		}
+	}
+}

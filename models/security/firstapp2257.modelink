@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modelink threeWay="true" forceExeedL="true" forceExeedM="true" forceExeedR="true">
+  <model path="/24f54f23.firstapp2257.models/ui/firstapp2257.reactbotui" position="LEFT" />
+  <model path="/24f54f23.firstapp2257.models/entity/firstapp2257.csharpbotentity" position="MIDDLE" />
+  <model path="/24f54f23.firstapp2257.models/security/firstapp2257.commonsecurity" position="RIGHT" />
+</modelink>

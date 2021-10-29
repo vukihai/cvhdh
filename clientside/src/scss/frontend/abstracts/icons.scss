@@ -1,0 +1,646 @@
+
+/*
+ * @bot-written
+ *
+ * WARNING AND NOTICE
+ * Any access, download, storage, and/or use of this source code is subject to the terms and conditions of the
+ * Full Software Licence as accepted by you before being granted access to this source code and other materials,
+ * the terms of which can be accessed on the Codebots website at https://codebots.com/full-software-licence. Any
+ * commercial use in contravention of the terms of the Full Software Licence may be pursued by Codebots through
+ * licence termination and further legal action, and be required to indemnify Codebots for any loss or damage,
+ * including interest and costs. You are deemed to have accepted the terms of the Full Software Licence on any
+ * access, download, storage, and/or use of this source code.
+ *
+ * BOT WARNING
+ * This file is bot-written.
+ * Any changes out side of "protected regions" will be lost next time the bot makes any changes.
+ */
+/* --------------------------------
+Icons
+-------------------------------- */
+/*
+These are the lightning icon variables list
+https://medium.com/codyhouse/create-your-design-system-part-5-icons-594f39cfb1b
+*/
+
+/* To use an icon icon($position: before, $icon: false, $styles: true) */
+/*https://jaydenseric.com/blog/fun-with-sass-and-font-icons*/
+
+/* Current provided icons : https://cdn.lampbot.ai/lightning-icons/latest/lightning-icons.css */
+
+/*
+Your project is currently using lightning icons, you can choose to use your own icons by appending to the map below.
+Make sure you have created and imported your custom fonts.
+*/
+
+// % protected region % [Change lightning icons here] off begin
+@import url("https://cdn.codebots.com/lampbot/lightning-icons/latest/lightning-icons.css");
+
+$lightning-icons: (
+	"3-way-split-bottom": "\e900",
+	"3-way-split-left": "\e901",
+	"3-way-split-right": "\e902",
+	"3-way-split-top": "\e903",
+	"academy": "\e904",
+	"access-database": "\e905",
+	"accessiblity": "\e906",
+	"accessories": "\e907",
+	"actions": "\e909",
+	"activity": "\e90a",
+	"ai": "\e90d",
+	"air-con": "\e90e",
+	"airplay": "\e90f",
+	"alert": "\e910",
+	"align-centre": "\e911",
+	"align-justify": "\e912",
+	"align-left": "\e913",
+	"align-right": "\e914",
+	"anchor": "\e917",
+	"android": "\e918",
+	"api": "\e91b",
+	"app": "\e91c",
+	"architect": "\e920",
+	"archivable": "\e921",
+	"arrow-down": "\e924",
+	"arrow-down-circle": "\e925",
+	"arrow-left": "\e926",
+	"arrow-left-circle": "\e927",
+	"arrow-left-down": "\e928",
+	"arrow-left-up": "\e929",
+	"arrow-right": "\e92a",
+	"arrow-right-cricle": "\e92b",
+	"arrow-right-down": "\e92c",
+	"arrow-right-up": "\e92d",
+	"arrow-up": "\e92e",
+	"arrow-up-circle": "\e92f",
+	"artboard": "\e930",
+	"article": "\e931",
+	"at-sign": "\e934",
+	"attributes": "\e935",
+	"auto-layout": "\e938",
+	"award": "\e93a",
+	"background-story": "\e93c",
+	"backlog": "\e93d",
+	"backwards-circle": "\e93f",
+	"badge": "\e941",
+	"balance": "\e942",
+	"banner": "\e944",
+	"bath": "\e947",
+	"battery": "\e948",
+	"battery-charge-1": "\e949",
+	"battery-charging": "\e94c",
+	"bdg": "\e94e",
+	"beach": "\e94f",
+	"bed": "\e951",
+	"beer": "\e952",
+	"bell": "\e954",
+	"bell-off": "\e955",
+	"bell-snooze": "\e956",
+	"bicycle": "\e95a",
+	"bin-2": "\e95b",
+	"bin-delete": "\e95c",
+	"bin-empty": "\e95d",
+	"bin-full": "\e95e",
+	"bird": "\e95f",
+	"bluetooth": "\e961",
+	"bomb": "\e964",
+	"book": "\e965",
+	"bookmark": "\e966",
+	"book-open": "\e967",
+	"bot": "\e96a",
+	"box": "\e970",
+	"box-minus": "\e971",
+	"box-plus": "\e972",
+	"bread": "\e973",
+	"breakfast": "\e974",
+	"briefcase": "\e976",
+	"brightness-1": "\e977",
+	"brightness-2": "\e978",
+	"bring-forward": "\e979",
+	"bring-to-front": "\e97a",
+	"brush": "\e97c",
+	"btn": "\e97d",
+	"bucket": "\e97e",
+	"bug": "\e980",
+	"bug-squash": "\e981",
+	"buildings": "\e982",
+	"bus": "\e983",
+	"cable": "\e985",
+	"calculate": "\e987",
+	"calender": "\e988",
+	"camera": "\e989",
+	"camera-off": "\e98a",
+	"cancel": "\e98b",
+	"car": "\e98f",
+	"cards": "\e990",
+	"car-park": "\e993",
+	"cart": "\e994",
+	"cast": "\e995",
+	"categories": "\e997",
+	"change": "\e998",
+	"chart-bar-1": "\e99b",
+	"chart-bar-2": "\e99c",
+	"chart-bar-3": "\e99d",
+	"chart-bar-4": "\e99e",
+	"chart-line": "\e99f",
+	"chart-pie": "\e9a0",
+	"chats": "\e9a1",
+	"check": "\e9a2",
+	"check-box": "\e9a3",
+	"check-circle": "\e9a4",
+	"check-circle-2": "\e9a5",
+	"check-out": "\e9a6",
+	"chevron-down": "\e9a9",
+	"chevron-left": "\e9aa",
+	"chevron-right": "\e9ab",
+	"chevrons-down": "\e9ac",
+	"chevrons-left": "\e9ad",
+	"chevrons-right": "\e9ae",
+	"chevrons-up": "\e9af",
+	"chevron-up": "\e9b0",
+	"child": "\e9b2",
+	"children": "\e9b3",
+	"circle": "\e9b6",
+	"circle-add": "\e9b7",
+	"circle-bot": "\e9b8",
+	"circle-delete": "\e9b9",
+	"circle-fill": "\e9ba",
+	"circle-minus": "\e9bb",
+	"clean": "\e9bd",
+	"clipboard": "\e9bf",
+	"clock": "\e9c0",
+	"cloud": "\e9c3",
+	"cloud-code": "\e9c4",
+	"cloud-download": "\e9c5",
+	"cloud-drizzle": "\e9c6",
+	"cloud-off": "\e9c7",
+	"cloud-power": "\e9c8",
+	"cloud-rain": "\e9c9",
+	"cloud-upload": "\e9cb",
+	"code": "\e9cd",
+	"coffee": "\e9d1",
+	"cold": "\e9d2",
+	"collapse-right": "\e9d3",
+	"collaspe": "\e9d4",
+	"collaspe-left": "\e9d5",
+	"column": "\e9d6",
+	"compass": "\e9da",
+	"conference": "\e9dc",
+	"connection": "\e9df",
+	"copy": "\e9e3",
+	"corner-down-left": "\e9e4",
+	"corner-down-right": "\e9e5",
+	"corner-left-down": "\e9e6",
+	"corner-left-up": "\e9e7",
+	"corner-right-down": "\e9e8",
+	"corner-right-up": "\e9e9",
+	"corner-up-left": "\e9ea",
+	"corner-up-right": "\e9eb",
+	"credit-card": "\e9ed",
+	"crop": "\e9ee",
+	"cube": "\e9f4",
+	"cube-add": "\e9f5",
+	"cube-delete": "\e9f6",
+	"cube-minus": "\e9f7",
+	"cut": "\e9f8",
+	"database": "\ea06",
+	"database-2": "\ea07",
+	"date-time": "\ea08",
+	"decimal": "\ea0a",
+	"delete": "\ea0b",
+	"delete-column": "\ea0c",
+	"delete-row": "\ea0d",
+	"deploy": "\ea10",
+	"desk": "\ea12",
+	"desk-stand": "\ea13",
+	"desktop": "\ea14",
+	"diamond": "\ea19",
+	"disconnect": "\ea1d",
+	"display-all": "\ea1e",
+	"divide": "\ea1f",
+	"download": "\ea21",
+	"duplicate": "\ea2b",
+	"edit": "\ea2e",
+	"edit-box": "\ea2f",
+	"edit-line": "\ea30",
+	"error": "\ea3a",
+	"exclamation": "\ea3d",
+	"expand": "\ea3e",
+	"expand-2": "\ea3f",
+	"export": "\ea40",
+	"eye-dropper": "\ea41",
+	"eye-track": "\ea42",
+	"fastfoward": "\ea45",
+	"feather": "\ea46",
+	"feedback": "\ea49",
+	"female": "\ea4a",
+	"female-female": "\ea4b",
+	"female-male": "\ea4c",
+	"file": "\ea50",
+	"file-add": "\ea51",
+	"file-code": "\ea52",
+	"file-copy": "\ea53",
+	"file-delete": "\ea54",
+	"file-docx": "\ea55",
+	"file-img": "\ea56",
+	"file-remove": "\ea57",
+	"files": "\ea58",
+	"file-stack": "\ea59",
+	"file-text": "\ea5a",
+	"film": "\ea5b",
+	"filter": "\ea5c",
+	"finish": "\ea5e",
+	"fire": "\ea5f",
+	"fireworks": "\ea60",
+	"flow": "\ea64",
+	"flower": "\ea6a",
+	"folder": "\ea6e",
+	"folder-add": "\ea6f",
+	"folder-copy": "\ea70",
+	"folder-delete": "\ea71",
+	"folder-open": "\ea72",
+	"folder-remove": "\ea73",
+	"food": "\ea74",
+	"foward-circle": "\ea7a",
+	"grid": "\ea8b",
+	"gym": "\ea8e",
+	"hammer": "\ea8f",
+	"hand-grab": "\ea90",
+	"hand-ok": "\ea91",
+	"hand-open": "\ea92",
+	"hand-point": "\ea93",
+	"hand-wave": "\ea94",
+	"hard-drive": "\ea95",
+	"hashtag": "\ea97",
+	"health": "\ea9c",
+	"heart": "\ea9d",
+	"heart-broken": "\ea9e",
+	"heart-fill": "\ea9f",
+	"heart-large": "\eaa0",
+	"heart-large-broken": "\eaa1",
+	"help": "\eaa4",
+	"hexagon": "\eaa5",
+	"hexagon-add": "\eaa6",
+	"hexagon-delete": "\eaa7",
+	"hexagon-fill": "\eaa8",
+	"hexagon-minus": "\eaa9",
+	"hidden": "\eaaa",
+	"home": "\eaae",
+	"horizontal": "\eab0",
+	"horizontal-split": "\eab1",
+	"hospital": "\eab2",
+	"hot": "\eab3",
+	"hourglass": "\eab4",
+	"hourglass-empty": "\eab5",
+	"img": "\eabb",
+	"import": "\eabc",
+	"inbox": "\eabd",
+	"information": "\eac0",
+	"key": "\ead7",
+	"left-right": "\eae2",
+	"lesson": "\eae5",
+	"letter": "\eae6",
+	"library": "\eae7",
+	"library-item": "\eae8",
+	"life-buoy": "\eae9",
+	"light-bulb": "\eaea",
+	"lightning": "\eaec",
+	"lightning-off": "\eaed",
+	"link-1": "\eaf0",
+	"link-2": "\eaf1",
+	"link-broken": "\eaf2",
+	"link-external": "\eaf4",
+	"link-internal": "\eaf5",
+	"list": "\eaf6",
+	"loader": "\eaf8",
+	"location-map": "\eaf9",
+	"location-pin": "\eafa",
+	"lock": "\eafb",
+	"lock-open": "\eafc",
+	"login": "\eafd",
+	"logout": "\eafe",
+	"look": "\eb00",
+	"look-off": "\eb01",
+	"mail": "\eb07",
+	"mail-open": "\eb08",
+	"maintance": "\eb09",
+	"male": "\eb0a",
+	"male-female": "\eb0b",
+	"male-male": "\eb0c",
+	"man": "\eb0d",
+	"management": "\eb0e",
+	"map": "\eb11",
+	"maximise": "\eb14",
+	"maxminise-2": "\eb15",
+	"meeting": "\eb17",
+	"menu": "\eb18",
+	"message": "\eb19",
+	"message-circle": "\eb1a",
+	"mic": "\eb1b",
+	"mic-off": "\eb1c",
+	"microphone": "\eb1e",
+	"minimise": "\eb21",
+	"minimise-2": "\eb22",
+	"minus": "\eb23",
+	"minus-circle": "\eb24",
+	"mobile": "\eb26",
+	"money": "\eb28",
+	"more-horizontal": "\eb2b",
+	"more-vertical": "\eb2c",
+	"mouse": "\eb2f",
+	"move": "\eb30",
+	"music": "\eb31",
+	"navigation": "\eb33",
+	"navigation-2": "\eb34",
+	"note": "\eb3a",
+	"ol-list": "\eb42",
+	"open-left": "\eb46",
+	"open-right": "\eb47",
+	"package": "\eb4b",
+	"paint-brush": "\eb4d",
+	"pants": "\eb50",
+	"paperclip": "\eb51",
+	"paper-plane": "\eb52",
+	"paste": "\eb55",
+	"pause": "\eb58",
+	"pause-circle": "\eb59",
+	"pen": "\eb5b",
+	"person": "\eb5c",
+	"person-add": "\eb5d",
+	"person-check": "\eb5e",
+	"person-delete": "\eb5f",
+	"person-group": "\eb60",
+	"person-remove": "\eb61",
+	"phone": "\eb63",
+	"phone-forwarded": "\eb66",
+	"phone-incoming": "\eb67",
+	"phone-missed": "\eb68",
+	"phone-off": "\eb69",
+	"phone-outgoing": "\eb6a",
+	"pin": "\eb6e",
+	"pin-2": "\eb6f",
+	"plane": "\eb74",
+	"plant": "\eb75",
+	"play": "\eb78",
+	"play-circle": "\eb79",
+	"plugin": "\eb7a",
+	"plus": "\eb7b",
+	"plus-circle": "\eb7c",
+	"pool": "\eb80",
+	"poster": "\eb81",
+	"post-it": "\eb82",
+	"power": "\eb83",
+	"pray": "\eb84",
+	"presentation": "\eb85",
+	"printer": "\eb86",
+	"properties": "\eb8f",
+	"qualification": "\eb96",
+	"question": "\eb97",
+	"radio": "\eb9b",
+	"reader": "\eba0",
+	"rearrange": "\eba1",
+	"recycle": "\eba3",
+	"redo": "\eba4",
+	"refresh-ccw": "\eba5",
+	"refresh-cw": "\eba6",
+	"remote": "\eba7",
+	"reorder": "\eba8",
+	"repair": "\eba9",
+	"repeat": "\ebaa",
+	"reset": "\ebac",
+	"resolve": "\ebad",
+	"river": "\ebb4",
+	"roadmap": "\ebb5",
+	"rocket": "\ebb6",
+	"room": "\ebb9",
+	"rotate-ccw": "\ebbb",
+	"rotate-ccw-2": "\ebbc",
+	"rotate-cw": "\ebbd",
+	"rotate-cw-2": "\ebbe",
+	"row": "\ebbf",
+	"running": "\ebc1",
+	"sad": "\ebc3",
+	"sail-ship": "\ebc4",
+	"sale": "\ebc5",
+	"satellite": "\ebc7",
+	"save": "\ebc8",
+	"scan": "\ebc9",
+	"scissors": "\ebca",
+	"screen-share": "\ebcd",
+	"search": "\ebce",
+	"select-column": "\ebd1",
+	"select-row": "\ebd2",
+	"send-backwards": "\ebd3",
+	"send-to-back": "\ebd4",
+	"settings": "\ebda",
+	"share": "\ebdb",
+	"share-2": "\ebdc",
+	"shield": "\ebdf",
+	"shield-off": "\ebe0",
+	"shirt": "\ebe2",
+	"shop": "\ebe4",
+	"shorts": "\ebe5",
+	"shower": "\ebe6",
+	"shrink": "\ebe7",
+	"shuffle": "\ebe8",
+	"sidebar": "\ebe9",
+	"skip-backward": "\ebef",
+	"skip-backwards-circle": "\ebf0",
+	"skip-forward": "\ebf1",
+	"skip-foward-circle": "\ebf2",
+	"skirt": "\ebf3",
+	"slash": "\ebf5",
+	"slice": "\ebf6",
+	"slide": "\ebf7",
+	"sliders-1": "\ebf8",
+	"sliders-2": "\ebf9",
+	"smaller": "\ebfa",
+	"social": "\ebfe",
+	"sound-off": "\ec00",
+	"sound-on": "\ec01",
+	"source": "\ec02",
+	"source-code": "\ec03",
+	"speaker": "\ec0a",
+	"sports": "\ec0c",
+	"spreadsheet": "\ec0d",
+	"square-fill": "\ec11",
+	"square-x": "\ec12",
+	"star": "\ec14",
+	"star-fill": "\ec15",
+	"stop-circle": "\ec16",
+	"sun": "\ec1d",
+	"sunrise": "\ec1f",
+	"sunset": "\ec20",
+	"tablet": "\ec25",
+	"tag": "\ec26",
+	"tag-add": "\ec27",
+	"tag-remove": "\ec28",
+	"target": "\ec2a",
+	"team": "\ec2f",
+	"terminal": "\ec30",
+	"tests": "\ec32",
+	"test-tubes": "\ec33",
+	"text-to-speech": "\ec36",
+	"thermometer": "\ec37",
+	"thumbs-down": "\ec38",
+	"thumbs-up": "\ec39",
+	"toggle-left": "\ec3e",
+	"toogle-right": "\ec3f",
+	"torch": "\ec40",
+	"touch": "\ec41",
+	"train": "\ec44",
+	"tree": "\ec45",
+	"triangle": "\ec49",
+	"triangle-add": "\ec4a",
+	"triangle-delete": "\ec4c",
+	"triangle-down": "\ec4d",
+	"triangle-fill": "\ec4e",
+	"triangle-minus": "\ec4f",
+	"triangle-up": "\ec50",
+	"trophy": "\ec51",
+	"truck": "\ec52",
+	"tv": "\ec53",
+	"twitter": "\ec54",
+	"umbrella": "\ec57",
+	"uncollaspe": "\ec58",
+	"underline": "\ec59",
+	"undo": "\ec5b",
+	"up-down": "\ec5c",
+	"upload": "\ec5d",
+	"usb": "\ec5e",
+	"vegetables": "\ec63",
+	"versions": "\ec64",
+	"vertical-split": "\ec65",
+	"video": "\ec67",
+	"video-controller": "\ec68",
+	"video-off": "\ec69",
+	"view": "\ec6a",
+	"vimeo": "\ec6c",
+	"voicemail": "\ec6d",
+	"void": "\ec6e",
+	"volcano": "\ec6f",
+	"volume": "\ec70",
+	"volume-1": "\ec71",
+	"volume-2": "\ec72",
+	"volume-x": "\ec73",
+	"vr": "\ec74",
+	"walk": "\ec77",
+	"wallet": "\ec78",
+	"warning": "\ec7a",
+	"watch": "\ec7b",
+	"water": "\ec7c",
+	"wave": "\ec7e",
+	"web-cam": "\ec7f",
+	"wheel": "\ec81",
+	"whiteboard": "\ec84",
+	"wifi": "\ec85",
+	"wifi-off": "\ec86",
+	"wind": "\ec87",
+	"windows": "\ec88",
+	"wine": "\ec89",
+	"woman": "\ec8b",
+	"woman-child": "\ec8c",
+	"cross": "\ec92",
+	"x-circle": "\ec93",
+	"x-wing": "\ec94",
+	"youtube": "\ec95",
+	"zoom-in": "\ec96",
+	"zoom-out": "\ec97"
+);
+$lightning-icon-name: "lightning-icons";
+// % protected region % [Change lightning icons here] end
+
+@each $name,
+$char in $lightning-icons {
+	.icon-#{$name} {
+		&:before,
+		&:after {
+			content: $char;
+			font-family: $lightning-icon-name;
+		}
+	}
+}
+
+// % protected region % [Add your custom icons here] off begin
+$icons-custom: (
+);
+
+$icon-custom-name: "";
+// % protected region % [Add your custom icons here] end
+
+@each $name,
+$char in $icons-custom {
+	.icon-#{$name} {
+		&:after,
+		&:before {
+			content: $char;
+			font-family: $icon-custom-name;
+		}
+	}
+}
+
+// % protected region % [Add custom icon spacing here] off begin
+*[class*='icon-'] {
+
+	//Left and top icons should be before classes
+	&.icon-top,
+	&.icon-left {
+		&:after {
+			display: none;
+		}
+	}
+
+	&.icon-left {
+		&:before {
+			margin-right: $space-sm;
+		}
+	}
+
+	&.icon-top {
+		display: block;
+
+		&:before {
+			display: block;
+			margin-bottom: $space-xs;
+		}
+	}
+
+	//Right and bottom icons should be after classes
+	&.icon-bottom,
+	&.icon-right {
+		&:before {
+			display: none;
+		}
+	}
+
+	&.icon-right {
+		&:after {
+			margin-left: $space-sm;
+		}
+	}
+
+	&.icon-bottom {
+		display: block;
+
+		&:after {
+			display: block;
+			margin-top: $space-xs;
+		}
+	}
+
+	&.icon-only {
+		display: block;
+
+		&:before {
+			display: block;
+			margin: $space-xxs;
+		}
+		&:after{
+			display: none;
+		}
+	}
+}
+// % protected region % [Add custom icon spacing here] end
+
+// % protected region % [Add additional icons here] off begin
+// % protected region % [Add additional icons here] end

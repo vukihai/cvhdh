@@ -1,0 +1,130 @@
+{
+  "@bot-written": "@bot-written  WARNING AND NOTICE Any access, download, storage, and/or use of this source code is subject to the terms and conditions of the Full Software Licence as accepted by you before being granted access to this source code and other materials, the terms of which can be accessed on the Codebots website at https://codebots.com/full-software-licence. Any commercial use in contravention of the terms of the Full Software Licence may be pursued by Codebots through licence termination and further legal action, and be required to indemnify Codebots for any loss or damage, including interest and costs. You are deemed to have accepted the terms of the Full Software Licence on any access, download, storage, and/or use of this source code.  BOT WARNING This file is bot-written. Any changes out side of \"protected regions\" will be lost next time the bot makes any changes.",
+  "name": "app",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "//": [
+    	" protected region % [Configure the package versions here] off begin "
+    ],
+    "@apollo/client": "^3.3.21",
+    "awesome-debounce-promise": "^2.1.0",
+    "axios": "^0.21.1",
+    "classnames": "^2.3.1",
+    "file-saver": "^2.0.5",
+    "graphiql": "^1.4.2",
+    "graphql": "^15.5.1",
+    "graphql-language-service-parser": "^1.9.2",
+    "jest-xunit": "^1.0.11",
+    "js-cookie": "^3.0.0",
+    "mobx": "^5.15.7",
+    "mobx-react": "^6.3.1",
+    "moment": "^2.29.1",
+    "sass": "^1.36.0",
+    "qrcode.react": "^1.0.1",
+    "react": "^17.0.2",
+    "react-contexify": "^5.0.0",
+    "react-flatpickr": "^3.10.7",
+    "react-dom": "^17.0.2",
+    "react-modal": "^3.14.3",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
+    "react-select": "^4.3.1",
+    "react-toastify": "^7.0.4",
+    "react-waypoint": "^10.1.0",
+    "reflect-metadata": "^0.1.13",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.3",
+    "typescript": "^4.3.5",
+    "uuid": "^8.3.2",
+    "//": [
+    	" protected region % [Configure the package versions here] end "
+    ],
+    "//": [
+    	" protected region % [Add any custom libraries here] off begin "
+    ],
+    "//": [
+    	" protected region % [Add any custom libraries here] end "
+    ]
+  },
+  "scripts": {
+    "//": [
+    	" protected region % [Configure node scripts here] off begin "
+    ],
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
+    "//": [
+    	" protected region % [Configure node scripts here] end "
+    ]
+  },
+  "//": [
+  	" protected region % [Configure the linting options here] off begin "
+  ],
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "//": [
+  	" protected region % [Configure the linting options here] end "
+  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "//": [
+    	" protected region % [Configure the dev package versions here] off begin "
+    ],
+    "@testing-library/react": "^12.0.0",
+    "@types/classnames": "^2.3.1",
+    "@types/enzyme": "^3.10.9",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/file-saver": "^2.0.3",
+    "@types/graphql": "^14.5.0",
+    "@types/jest": "^26.0.24",
+    "@types/js-cookie": "^2.2.7",
+    "@types/lodash": "^4.14.139",
+    "@types/node": "^12.7.12",
+    "@types/qrcode.react": "1.0.2",
+    "@types/react": "^16.9.56",
+    "@types/react-dom": "^16.9.14",
+    "@types/react-flatpickr": "^3.8.4",
+    "@types/react-modal": "^3.12.1",
+    "@types/react-router": "^5.1.16",
+    "@types/react-router-dom": "^5.1.8",
+    "@types/testing-library__react": "^10.2.0",
+    "@types/uuid": "^8.3.1",
+    "enzyme": "^3.11.0",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
+    "jest-junit": "^12.2.0",
+    "react-docgen-typescript": "^2.0.0",
+    "react-styleguidist": "^9.1.14",
+    "ts-jest": "^27.0.4",
+    "//": [
+    	" protected region % [Configure the dev package versions here] end "
+    ],
+    "//": [
+    	" protected region % [Add any custom dev libraries here] off begin "
+    ],
+    "//": [
+    	" protected region % [Add any custom dev libraries here] end "
+    ]
+  },
+  "//": [
+  	" protected region % [Add any additional configuration here] off begin "
+  ],
+  "//": [
+  	" protected region % [Add any additional configuration here] end "
+  ]
+}

@@ -1,0 +1,64 @@
+<!--
+@bot-written
+
+WARNING AND NOTICE
+Any access, download, storage, and/or use of this source code is subject to the terms and conditions of the
+Full Software Licence as accepted by you before being granted access to this source code and other materials,
+the terms of which can be accessed on the Codebots website at https://codebots.com/full-software-licence. Any
+commercial use in contravention of the terms of the Full Software Licence may be pursued by Codebots through
+licence termination and further legal action, and be required to indemnify Codebots for any loss or damage,
+including interest and costs. You are deemed to have accepted the terms of the Full Software Licence on any
+access, download, storage, and/or use of this source code.
+
+BOT WARNING
+This file is bot-written.
+Any changes out side of "protected regions" will be lost next time the bot makes any changes.
+-->
+
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<IsPackable>false</IsPackable>
+		<NoWarn>$(NoWarn);EF1001</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="../../serverside/src/appsettings.xml" CopyToOutputDirectory="Always" />
+		<None Include="../../serverside/src/appsettings.Test.xml" CopyToOutputDirectory="Always" />
+		<None Include="xunit.runner.json" CopyToOutputDirectory="Always" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- % protected region % [Add any further imports here] off begin -->
+		<!-- % protected region % [Add any further imports here] end -->
+		<ProjectReference Include="..\..\serverside\src\Firstapp2257.csproj" />
+		<ProjectReference Include="..\TestDataLib\TestDataLib.csproj" />
+
+		<!-- % protected region % [Customise existing libraries here] off begin -->
+		<PackageReference Include="AutoFixture.Xunit2" Version="4.15.0" />
+		<PackageReference Include="AutoFixture.SeedExtensions" Version="4.15.0" />
+		<PackageReference Include="FluentAssertions" Version="5.10.3" />
+		<PackageReference Include="ExpectedObjects" Version="3.5.2" />
+		<PackageReference Include="HtmlAgilityPack" Version="1.11.34" />
+		<PackageReference Include="MockQueryable.Core" Version="5.0.0" />
+		<PackageReference Include="MockQueryable.Moq" Version="5.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.3" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Ini" Version="5.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Xml" Version="5.0.0" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.8.3" />
+		<PackageReference Include="Moq" Version="4.16.0" />
+		<PackageReference Include="NCrontab" Version="3.3.1" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+		<PackageReference Include="xunit" Version="2.4.1" />
+		<PackageReference Include="xunit.runner.console" Version="2.4.1">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
+		<PackageReference Include="XunitXml.TestLogger" Version="3.0.66" />
+		<!-- % protected region % [Customise existing libraries here] end -->
+	</ItemGroup>
+
+	<!-- % protected region % [Add any extra ItemGroups here] off begin -->
+	<!-- % protected region % [Add any extra ItemGroups here] end -->
+</Project>

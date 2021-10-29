@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reactbotUi:UserInterfaceModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:reactbotUi="http://codebots.com/emf/reactbot/ui" Uuid="d71a0e15-772c-4946-e939-a49b447b65b4" TargetProject="firstapp2257">
+  <Pages xsi:type="reactbotUi:Page" Uuid="35225382-db52-4eec-bcb2-8d995a07a335" Name="List student"/>
+  <Pages xsi:type="reactbotUi:Page" Uuid="9b28c91f-2fd7-45b1-a185-0af0b582cc4d" Name="Form edit student"/>
+  <Pages xsi:type="reactbotUi:Page" Uuid="c040b3ec-688a-41f6-84a2-198ee3027bc4" Name="Edit archivement"/>
+  <Pages xsi:type="reactbotUi:Page" Uuid="ac7c48fa-9ac0-4e6e-91a8-eae317dafd79" Name="Main menu" IsHomePage="true"/>
+  <Layouts xsi:type="reactbotUi:VerticalStackLayout" Uuid="cd6b2673-9a34-48e5-8e83-f262df5c5905"/>
+  <Layouts xsi:type="reactbotUi:VerticalStackLayout" Uuid="9b4862df-d61e-4468-b20e-781fd47a3201"/>
+  <Layouts xsi:type="reactbotUi:HorizontalStackLayout" Uuid="291d0936-8209-45e3-9a14-01b2908a5aff"/>
+  <Layouts xsi:type="reactbotUi:VerticalStackLayout" Uuid="5f0ad155-2859-42c9-bc05-c21bbe590b7b"/>
+  <Layouts xsi:type="reactbotUi:VerticalStackLayout" Uuid="c82433ed-5c8a-4c52-98fe-869b5fbbf68d"/>
+  <Components xsi:type="reactbotUi:HeadingComponent" Uuid="a51dd1ef-8227-4a3c-9740-3cb0ba48b1ff" Contents="List student"/>
+  <Components xsi:type="reactbotUi:ListComponent" Uuid="7c815df4-c66e-493e-95b2-e5e070428fd9">
+    <Items>Vu Dinh Huong</Items>
+    <Items>Tran Quang Linh</Items>
+    <Items>Vũ Tuấn Hưng</Items>
+    <Items>Đặng Kim Thi</Items>
+    <Items>Lê Thị Hồng</Items>
+  </Components>
+  <Components xsi:type="reactbotUi:HeadingComponent" Uuid="bea46a5b-2ef1-49ab-bf57-067e19c7f727" Contents="Edit student info"/>
+  <Components xsi:type="reactbotUi:FormComponent" Uuid="aa52ee63-12ad-4557-9ae3-a9e49a5ecacf">
+    <Entity href="../entity/firstapp2257.csharpbotentity#277302f1-6e6d-4374-ab5a-ffd00e7094a7"/>
+  </Components>
+  <Components xsi:type="reactbotUi:HeadingComponent" Uuid="c27e7396-7ae9-45d1-b161-e1b171a6ee86" Contents="Edit archivement"/>
+  <Components xsi:type="reactbotUi:ParagraphComponent" Uuid="fdc9cad8-ede5-4a02-b864-b62f91249750" Contents="this page use to edit archivement of student"/>
+  <Components xsi:type="reactbotUi:FormComponent" Uuid="6222cf66-2a75-4abf-bef4-e067f15dbdfe">
+    <Entity href="../entity/firstapp2257.csharpbotentity#d5dbbdae-e4c9-4e60-b7be-5efe504f3502"/>
+  </Components>
+  <Components xsi:type="reactbotUi:DropdownComponent" Uuid="0be509c9-e646-4a63-bd9c-d2d8395dd020" Name="My profile">
+    <Options>Thông tin cá nhân</Options>
+    <Options>Đổi mật khẩu</Options>
+    <Options>Đăng xuất</Options>
+  </Components>
+  <Components xsi:type="reactbotUi:LinkComponent" Uuid="9b8c9029-a633-4454-82b3-76fc6204b507" Contents="sửa thông tin" Href=""/>
+  <Components xsi:type="reactbotUi:LinkComponent" Uuid="1c1fefea-35c8-4496-9244-1fb63eb09578" Contents="assignment" Href=""/>
+  <Components xsi:type="reactbotUi:LinkComponent" Uuid="35dae7c2-8940-4819-a518-0b1f1d3d80ff" Contents="thông tin học viên" Href=""/>
+  <Components xsi:type="reactbotUi:ParagraphComponent" Uuid="b0d0cebd-3d39-4f80-86eb-eb74dde8f1ee" Contents="Trang Chủ"/>
+  <Components xsi:type="reactbotUi:ParagraphComponent" Uuid="69dc9826-eb49-496b-aeff-187037a577a2" Contents="List assignment"/>
+  <Components xsi:type="reactbotUi:ListComponent" Uuid="fda93329-7999-4212-8eb4-a768c0b3496a">
+    <Items>assignment 1</Items>
+    <Items>assignment 2</Items>
+    <Items>assignment 3</Items>
+  </Components>
+  <ReferenceLayoutElements xsi:type="reactbotUi:LayoutElementReference" Uuid="39bfc715-945a-5cfd-aa05-e24aa9412199" Source="35225382-db52-4eec-bcb2-8d995a07a335" Target="cd6b2673-9a34-48e5-8e83-f262df5c5905"/>
+  <ReferenceLayoutElements xsi:type="reactbotUi:LayoutElementReference" Uuid="f2270e34-9510-5edd-8245-0faa17ed5392" Source="cd6b2673-9a34-48e5-8e83-f262df5c5905" Target="a51dd1ef-8227-4a3c-9740-3cb0ba48b1ff"/>
+  <ReferenceLayoutElements xsi:type="reactbotUi:LayoutElementReference" Uuid="a62611d2-b412-5e69-b21e-72ce7221eed0" Order="1" Source="35225382-db52-4eec-bcb2-8d995a07a335" Target="7c815df4-c66e-493e-95b2-e5e070428fd9"/>
+  <ReferenceLayoutElements xsi:type="reactbotUi:LayoutElementReference" Uuid="9713dc2d-1420-5933-8fdd-cd5ec02bef01" Source="9b28c91f-2fd7-45b1-a185-0af0b582cc4d" Target="bea46a5b-2ef1-49ab-bf57-067e19c7f727"/>
+  <ReferenceLayoutElements xsi:type="reactbotUi:LayoutElementReference" Uuid="6e7d954b-cc73-50b0-98da-fd36454fc3b6" Order="1" Source="9b28c91f-2fd7-45b1-a185-0af0b582cc4d" Target="aa52ee63-12ad-4557-9ae3-a9e49a5ecacf"/>
+  <ReferenceLayoutElements xsi:type="reactbotUi:LayoutElementReference" Uuid="53eee9a1-176c-540e-92f3-0e1446a84d68" Source="c040b3ec-688a-41f6-84a2-198ee3027bc4" Target="c27e7396-7ae9-45d1-b161-e1b171a6ee86"/>
+  <ReferenceLayoutElements xsi:type="reactbotUi:LayoutElementReference" Uuid="e39f0d86-997d-508c-8271-b2c1c535ba53" Order="1" Source="c040b3ec-688a-41f6-84a2-198ee3027bc4" Target="fdc9cad8-ede5-4a02-b864-b62f91249750"/>
+  <ReferenceLayoutElements xsi:type="reactbotUi:LayoutElementReference" Uuid="8716e85b-f58c-59b4-93f6-d955da06414b" Order="2" Source="c040b3ec-688a-41f6-84a2-198ee3027bc4" Target="6222cf66-2a75-4abf-bef4-e067f15dbdfe"/>
+  <ReferenceLayoutElements xsi:type="reactbotUi:LayoutElementReference" Uuid="ea80d55a-b57a-5c02-9894-7287538b87b7" Source="ac7c48fa-9ac0-4e6e-91a8-eae317dafd79" Target="9b4862df-d61e-4468-b20e-781fd47a3201"/>
+  <ReferenceLayoutElements xsi:type="reactbotUi:LayoutElementReference" Uuid="86fb99ef-18c6-5676-9c3c-206315091f19" Source="9b4862df-d61e-4468-b20e-781fd47a3201" Target="291d0936-8209-45e3-9a14-01b2908a5aff"/>
+  <ReferenceLayoutElements xsi:type="reactbotUi:LayoutElementReference" Uuid="740caa14-85fc-539c-b8b8-2737acfc9fee" Source="291d0936-8209-45e3-9a14-01b2908a5aff" Target="0be509c9-e646-4a63-bd9c-d2d8395dd020"/>
+  <ReferenceLayoutElements xsi:type="reactbotUi:LayoutElementReference" Uuid="8f8849e1-226f-553e-a119-21c28a22d875" Order="1" Source="291d0936-8209-45e3-9a14-01b2908a5aff" Target="9b8c9029-a633-4454-82b3-76fc6204b507"/>
+  <ReferenceLayoutElements xsi:type="reactbotUi:LayoutElementReference" Uuid="b9c0a2e0-16f7-51ab-96c5-56e8650f06e1" Order="2" Source="291d0936-8209-45e3-9a14-01b2908a5aff" Target="1c1fefea-35c8-4496-9244-1fb63eb09578"/>
+  <ReferenceLayoutElements xsi:type="reactbotUi:LayoutElementReference" Uuid="bad6fd33-6a84-505f-aa1a-e00a71517ada" Order="3" Source="291d0936-8209-45e3-9a14-01b2908a5aff" Target="35dae7c2-8940-4819-a518-0b1f1d3d80ff"/>
+  <ReferenceLayoutElements xsi:type="reactbotUi:LayoutElementReference" Uuid="fc6d00f9-bbfd-5a8f-9aae-38162a18d15a" Order="4" Source="291d0936-8209-45e3-9a14-01b2908a5aff" Target="b0d0cebd-3d39-4f80-86eb-eb74dde8f1ee"/>
+  <ReferenceLayoutElements xsi:type="reactbotUi:LayoutElementReference" Uuid="a553bd4c-013b-5dda-a301-bddb3e44deb1" Order="1" Source="ac7c48fa-9ac0-4e6e-91a8-eae317dafd79" Target="5f0ad155-2859-42c9-bc05-c21bbe590b7b"/>
+  <ReferenceLayoutElements xsi:type="reactbotUi:LayoutElementReference" Uuid="0321861b-5c95-5754-a364-3dc98fc2b291" Source="5f0ad155-2859-42c9-bc05-c21bbe590b7b" Target="c82433ed-5c8a-4c52-98fe-869b5fbbf68d"/>
+  <ReferenceLayoutElements xsi:type="reactbotUi:LayoutElementReference" Uuid="9e54515b-b5cd-5406-ac02-f12c5b09de13" Source="c82433ed-5c8a-4c52-98fe-869b5fbbf68d" Target="69dc9826-eb49-496b-aeff-187037a577a2"/>
+  <ReferenceLayoutElements xsi:type="reactbotUi:LayoutElementReference" Uuid="8df89d7e-0a54-538a-b9d6-f5e793f24b0c" Order="1" Source="c82433ed-5c8a-4c52-98fe-869b5fbbf68d" Target="fda93329-7999-4212-8eb4-a768c0b3496a"/>
+</reactbotUi:UserInterfaceModel>

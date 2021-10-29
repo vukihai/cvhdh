@@ -1,0 +1,131 @@
+<!--
+@bot-written
+
+WARNING AND NOTICE
+Any access, download, storage, and/or use of this source code is subject to the terms and conditions of the
+Full Software Licence as accepted by you before being granted access to this source code and other materials,
+the terms of which can be accessed on the Codebots website at https://codebots.com/full-software-licence. Any
+commercial use in contravention of the terms of the Full Software Licence may be pursued by Codebots through
+licence termination and further legal action, and be required to indemnify Codebots for any loss or damage,
+including interest and costs. You are deemed to have accepted the terms of the Full Software Licence on any
+access, download, storage, and/or use of this source code.
+
+BOT WARNING
+This file is bot-written.
+Any changes out side of "protected regions" will be lost next time the bot makes any changes.
+-->
+
+<Project Sdk="Microsoft.NET.Sdk.Web">
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);1591;1587;1998;EF1001</NoWarn>
+
+		<FrontendPath>..\..\clientside</FrontendPath>
+		<!-- % protected region % [BuildDocFx build switch] off begin -->
+		<BuildDocFx>false</BuildDocFx>
+		<!-- % protected region % [BuildDocFx build switch] end -->
+		<!-- % protected region % [Add any property definitions here] off begin -->
+		<!-- % protected region % [Add any property definitions here] end -->
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- % protected region % [Add any further imports here] off begin -->
+		<!-- % protected region % [Add any further imports here] end -->
+
+		<PackageReference Include="Audit.EntityFramework.Core" Version="16.2.0" />
+		<PackageReference Include="Audit.EntityFramework.Identity.Core" Version="16.2.0" />
+		<PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
+		<PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="5.0.1" />
+		<PackageReference Include="AspNetCoreRateLimit" Version="4.0.1" />
+		<PackageReference Include="AspNetCoreRateLimit.Redis" Version="1.0.0" />
+		<PackageReference Include="AWSSDK.S3" Version="3.5.6.1" />
+		<PackageReference Include="CsvHelper" Version="17.0.1" />
+		<PackageReference Include="docfx.console" Version="2.56.5">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.3">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.AspNetCore.DataProtection" Version="5.0.3" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.DataProtection.EntityFrameworkCore" Version="5.0.3" />
+		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.3" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.3" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.3" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.3" />
+		<PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="5.0.3" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.3" />
+		<PackageReference Include="GraphQL.EntityFramework" Version="13.0.2" />
+		<PackageReference Include="GraphQL" Version="3.3.2" />
+		<PackageReference Include="GraphQL.Server.Transports.AspNetCore" Version="4.4.1" />
+		<PackageReference Include="GraphQL.Server.Transports.WebSockets" Version="4.4.1" />
+		<PackageReference Include="GraphQL.SystemTextJson" Version="3.3.2" />
+		<PackageReference Include="RazorLight" Version="2.0.0-rc.3" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.3" />
+		<PackageReference Include="NCrontab" Version="3.3.1" />
+
+		<!-- % protected region % [Customise scheduling libraries here] off begin -->
+		<PackageReference Include="Hangfire.Core" Version="1.7.19" />
+		<PackageReference Include="Hangfire.AspNetCore" Version="1.7.19" />
+		<PackageReference Include="Hangfire.Redis.StackExchange" Version="1.8.4" />
+		<PackageReference Include="Hangfire.EntityFrameworkCore" Version="0.3.1" />
+		<!-- % protected region % [Customise scheduling libraries here] end -->
+
+		<!-- % protected region % [Customise authorization library here] off begin -->
+		<PackageReference Include="OpenIddict" Version="2.0.1" />
+		<PackageReference Include="OpenIddict.EntityFrameworkCore" Version="2.0.1" />
+		<PackageReference Include="Serilog.AspNetCore" Version="3.4.0" />
+		<PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.2" />
+		<PackageReference Include="Z.EntityFramework.Plus.EFCore" Version="5.1.5" />
+		<!-- % protected region % [Customise authorization library here] end -->
+
+		<None Update="appsettings.xml" CopyToPublishDirectory="PreserveNewest" />
+		<None Update="appsettings.Development.xml" CopyToPublishDirectory="PreserveNewest" />
+
+		<!-- % protected region % [Add any extra settings here] off begin -->
+		<!-- Copy jwt signing cert into publish directory -->
+		<None Update="CARoot.pfx" CopyToPublishDirectory="PreserveNewest" />
+		<!-- % protected region % [Add any extra settings here] end -->
+
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Assets/Emails/*.cshtml" />
+		<!-- % protected region % [Add any additional resources here] off begin -->
+		<!-- % protected region % [Add any additional resources here] end -->
+	</ItemGroup>
+
+	<Target Name="PublishFrontend" AfterTargets="ComputeFilesToPublish" Condition=" '$(Configuration)' == 'Release' ">
+		<!-- % protected region % [Add any further release target options before building frontend here] off begin -->
+		<!-- % protected region % [Add any further release target options before building frontend here] end -->
+
+		<!-- Build the frontend -->
+		<!-- % protected region % [Customise build step here] off begin -->
+		<Exec Command="npm run build" WorkingDirectory="$(FrontendPath)" Condition=" '$(CSHARPBOT_DISABLE_CLIENT_BUILD)' != '1' " />
+		<!-- % protected region % [Customise build step here] end -->
+
+		<ItemGroup Condition=" '$(CSHARPBOT_DISABLE_CLIENT_COPY)' != '1' ">
+			<!-- % protected region % [Customise copying of client files here] off begin -->
+			<DistFiles Include="$(FrontendPath)\build\**" />
+			<ResolvedFileToPublish Include="@(DistFiles)" Exclude="@(ResolvedFileToPublish)">
+				<RelativePath>Client/%(RecursiveDir)%(Filename)%(Extension)</RelativePath>
+				<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+			</ResolvedFileToPublish>
+			<!-- % protected region % [Customise copying of client files here] end -->
+
+			<!-- % protected region % [Add any further release target items here] off begin -->
+			<!-- % protected region % [Add any further release target items here] end -->
+		</ItemGroup>
+
+		<!-- % protected region % [Add any further release target options after building frontend here] off begin -->
+		<!-- % protected region % [Add any further release target options after building frontend here] end -->
+	</Target>
+
+	<!-- % protected region % [Add any further targets here] off begin -->
+	<!-- % protected region % [Add any further targets here] end -->
+</Project>

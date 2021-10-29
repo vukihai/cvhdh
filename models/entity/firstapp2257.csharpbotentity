@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csharpbotEntity:EntityModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:csharpbotEntity="http://codebots.com/emf/csharpbot/entity" DatabaseProvider="POSTGRES" TargetProject="firstapp2257" Uuid="bd91956f-4869-4715-8295-3638a3b85d23" CreateDockerfile="true">
+	<Entities xsi:type="csharpbotEntity:Entity"  Uuid="d5dbbdae-e4c9-4e60-b7be-5efe504f3502" Name="Achievements" OrderByDirection="DESCENDING" OrderBy="22385db5-4900-44b6-a285-33a3d971ebba">
+		<Attributes xsi:type="csharpbotEntity:AttributeDate"  Uuid="22385db5-4900-44b6-a285-33a3d971ebba" Name="Achievement Date" Searchable="false" Unique="false"/>
+		<Attributes xsi:type="csharpbotEntity:AttributeString"  Uuid="8f02038b-4655-4be9-ba8a-1d5654cf76fc" Name="Achievement Details" Searchable="false" Unique="false" DatabaseType="VARCHAR"/>
+		<Attributes xsi:type="csharpbotEntity:AttributeEnum"  Uuid="5ded9a8d-13db-48ea-9102-8f36e6883d20" Name="Achievement Type" Searchable="false" Unique="false"/>
+		<Behaviours xsi:type="csharpbotEntity:BehaviourForms"  Uuid="17c4ab05-bd40-43d7-89dc-e54a5a167b9d"/>
+	</Entities>
+	<Entities xsi:type="csharpbotEntity:Entity"  Uuid="eee87414-9c29-4bd5-9b19-3dfa7e9690b2" Name="Address" OrderByDirection="ASCENDING">
+		<Attributes xsi:type="csharpbotEntity:AttributeString"  Uuid="ef16ff57-b911-4b6b-ab3a-002d039aa385" Name="Unit" Searchable="false" Unique="false" DatabaseType="VARCHAR"/>
+		<Attributes xsi:type="csharpbotEntity:AttributeString"  Uuid="3b9fe4e9-76b7-4738-9f86-0778a4ae69c3" Name="Address line 1" Searchable="false" Unique="false" DatabaseType="VARCHAR"/>
+		<Attributes xsi:type="csharpbotEntity:AttributeString"  Uuid="956f6a50-1255-4a7e-90c3-2cca45904348" Name="Address line 2" Searchable="false" Unique="false" DatabaseType="VARCHAR"/>
+		<Attributes xsi:type="csharpbotEntity:AttributeString"  Uuid="64823903-aae7-43a9-8b84-44e06187a46b" Name="Suburb" Searchable="false" Unique="false" DatabaseType="VARCHAR"/>
+		<Attributes xsi:type="csharpbotEntity:AttributeInteger"  Uuid="d52e53d3-1b96-4cc8-a537-17f888093f75" Name="Postcode" Searchable="false" Unique="false"/>
+		<Attributes xsi:type="csharpbotEntity:AttributeString"  Uuid="3c41ef96-b410-427f-8afd-b132edfe297c" Name="City" Searchable="false" Unique="false" DatabaseType="VARCHAR"/>
+		<Attributes xsi:type="csharpbotEntity:AttributeString"  Uuid="70e345ba-ea07-430d-9a50-a5b3d34b5f01" Name="Country" Searchable="false" Unique="false" DatabaseType="VARCHAR"/>
+		<Behaviours xsi:type="csharpbotEntity:BehaviourForms"  Uuid="900983fa-c51c-4590-9bb5-a5f69a15d8d8"/>
+	</Entities>
+	<Entities xsi:type="csharpbotEntity:Entity"  Uuid="277302f1-6e6d-4374-ab5a-ffd00e7094a7" Name="Students" OrderByDirection="ASCENDING" OrderBy="a8eedc10-94ce-4a9b-853e-458ac7ccf14f">
+		<Attributes xsi:type="csharpbotEntity:AttributeString"  Uuid="6aff2b4a-d5f3-40bb-a06c-3ccbf5494e60" Name="First Name" Searchable="true" Unique="false" DatabaseType="VARCHAR">
+			<Validators xsi:type="csharpbotEntity:ValidatorRequired"  Uuid="e8e88f4d-09f4-4c46-842c-2fec26bc1143"/>
+		</Attributes>
+		<Attributes xsi:type="csharpbotEntity:AttributeString"  Uuid="a8eedc10-94ce-4a9b-853e-458ac7ccf14f" Name="Last Name" Searchable="true" Unique="false" DatabaseType="VARCHAR">
+			<Validators xsi:type="csharpbotEntity:ValidatorRequired"  Uuid="fef71842-42db-4638-9dce-c0cff16301c4"/>
+		</Attributes>
+		<Attributes xsi:type="csharpbotEntity:AttributeString"  Uuid="6aeae6e2-b284-4fc7-af09-f7535307a2a1" Name="Contact Number" Searchable="false" Unique="false" DatabaseType="VARCHAR"/>
+		<Attributes xsi:type="csharpbotEntity:AttributeString"  Uuid="8e928e68-c553-4306-998b-64b642d6569a" Name="Email" Searchable="false" Unique="false" DatabaseType="VARCHAR"/>
+		<Attributes xsi:type="csharpbotEntity:AttributeDate"  Uuid="81d81290-7850-4c63-a1bc-c65aef88ac1a" Name="Enrolment Start" Searchable="false" Unique="false"/>
+		<Attributes xsi:type="csharpbotEntity:AttributeDate"  Uuid="678cfd8d-6656-4792-b9c7-1d68e1eb25b3" Name="Enrolment End" Searchable="false" Unique="false"/>
+		<Behaviours xsi:type="csharpbotEntity:BehaviourForms"  Uuid="7c9f25ae-a61a-46b6-a454-2756bf2546af"/>
+	</Entities>
+	<ReferenceEnums xsi:type="csharpbotEntity:ReferenceEnum"  Source="5ded9a8d-13db-48ea-9102-8f36e6883d20" Target="3b1d6ee7-f062-4a15-adce-83e096ec99a2"/>
+	<Entities xsi:type="csharpbotEntity:Entity"  Uuid="948061f1-2664-4eb1-8ae6-de7a5564e3b5" Name="Assessment Notes" OrderByDirection="ASCENDING" OrderBy="052f48fa-7383-4099-a571-71c214e26016">
+		<Attributes xsi:type="csharpbotEntity:AttributeString"  Uuid="92e7c2fe-35b1-4c79-ae95-27494bcd99e7" Name="Session Notes" Searchable="false" Unique="false" DatabaseType="VARCHAR"/>
+		<Attributes xsi:type="csharpbotEntity:AttributeDate"  Uuid="052f48fa-7383-4099-a571-71c214e26016" Name="Session Date" Searchable="false" Unique="false"/>
+	</Entities>
+	<Entities xsi:type="csharpbotEntity:Entity"  Uuid="63f4e5df-d663-4167-8fed-7aba4102e740" Name="Assessments" OrderByDirection="DESCENDING" OrderBy="121d908b-c774-46fd-b795-562dbb02392c">
+		<Attributes xsi:type="csharpbotEntity:AttributeDate"  Uuid="121d908b-c774-46fd-b795-562dbb02392c" Name="Start Date" Searchable="false" Unique="false"/>
+		<Attributes xsi:type="csharpbotEntity:AttributeDate"  Uuid="79484faa-7047-40d7-ae12-a59e5c3fba46" Name="End Date" Searchable="false" Unique="false"/>
+		<Attributes xsi:type="csharpbotEntity:AttributeString"  Uuid="0bf02ea4-da01-44d4-b062-89c54815e2da" Name="Summary" Searchable="false" Unique="false" DatabaseType="VARCHAR"/>
+		<Attributes xsi:type="csharpbotEntity:AttributeString"  Uuid="f8df54bf-e3c5-46df-9d94-52e894ea8859" Name="Recommendations" Searchable="false" Unique="false" DatabaseType="VARCHAR"/>
+	</Entities>
+	<Entities xsi:type="csharpbotEntity:Entity"  Uuid="318813d4-e6e1-44b3-a952-1eaf5d802026" Name="Comments" OrderByDirection="DESCENDING" OrderBy="9aa9dc64-27cf-4dcd-a91a-1a4ac29abaf3">
+		<Attributes xsi:type="csharpbotEntity:AttributeDate"  Uuid="9aa9dc64-27cf-4dcd-a91a-1a4ac29abaf3" Name="Comment Date" Searchable="false" Unique="false"/>
+		<Attributes xsi:type="csharpbotEntity:AttributeString"  Uuid="50dc1eb9-d3dd-4a96-bf0d-1a687631b9c0" Name="Comment Description" Searchable="false" Unique="false" DatabaseType="VARCHAR"/>
+	</Entities>
+	<Entities xsi:type="csharpbotEntity:Entity"  Uuid="569ce52d-b8d9-4d63-a470-c9d66bedaa23" Name="Staff" OrderByDirection="ASCENDING" OrderBy="3956549e-23fd-4c32-b060-3fcfb6820aa6">
+		<Behaviours xsi:type="csharpbotEntity:BehaviourUser"  Uuid="c1af1e59-c918-4e05-bab4-f1f81aaf9107"/>
+		<Attributes xsi:type="csharpbotEntity:AttributeString"  Uuid="d874a340-a079-4354-9fac-7fc3fd8870d6" Name="First Name" Searchable="true" Unique="false" DatabaseType="VARCHAR">
+			<Validators xsi:type="csharpbotEntity:ValidatorRequired"  Uuid="02a78147-0e6c-4783-b1a8-8909eb0dcc13"/>
+		</Attributes>
+		<Attributes xsi:type="csharpbotEntity:AttributeString"  Uuid="3956549e-23fd-4c32-b060-3fcfb6820aa6" Name="Last Name" Searchable="true" Unique="false" DatabaseType="VARCHAR">
+			<Validators xsi:type="csharpbotEntity:ValidatorRequired"  Uuid="95266ec3-a8be-4684-a61f-d58a94fb52b8"/>
+		</Attributes>
+		<Attributes xsi:type="csharpbotEntity:AttributeEnum"  Uuid="0feb49f9-833f-43bc-8e88-32a0782319f2" Name="Role" Searchable="false" Unique="false"/>
+		<Attributes xsi:type="csharpbotEntity:AttributeString"  Uuid="3be80acb-06f0-464e-b38e-993f22d95ab1" Name="Contact Number" Searchable="false" Unique="false" DatabaseType="VARCHAR"/>
+	</Entities>
+	<Enumerations xsi:type="csharpbotEntity:Enumeration"  Uuid="3b1d6ee7-f062-4a15-adce-83e096ec99a2" Name="Achievement Types">
+		<EnumLiterals xsi:type="csharpbotEntity:EnumLiteral"  Uuid="a4bd4469-48a5-49b1-9e7d-27948488c7a4" Name="Academic"/>
+		<EnumLiterals xsi:type="csharpbotEntity:EnumLiteral"  Uuid="11dcc7e7-a557-4df2-8dce-99d7b71c486e" Name="Sporting"/>
+		<EnumLiterals xsi:type="csharpbotEntity:EnumLiteral"  Uuid="d9b1e150-ee69-4650-8ca8-edb3dc1fd715" Name="Musical"/>
+	</Enumerations>
+	<ReferenceEnums xsi:type="csharpbotEntity:ReferenceEnum"  Source="0feb49f9-833f-43bc-8e88-32a0782319f2" Target="2f401151-9e2f-4f0d-82a4-292b88a5153e"/>
+	<Enumerations xsi:type="csharpbotEntity:Enumeration"  Uuid="2f401151-9e2f-4f0d-82a4-292b88a5153e" Name="Staff Roles">
+		<EnumLiterals xsi:type="csharpbotEntity:EnumLiteral"  Uuid="e44438eb-058b-4447-8ac2-11f1f200cde7" Name="Counsellor"/>
+		<EnumLiterals xsi:type="csharpbotEntity:EnumLiteral"  Uuid="f7ead24f-a385-403f-8846-e2680846f4ee" Name="Lecturer"/>
+		<EnumLiterals xsi:type="csharpbotEntity:EnumLiteral"  Uuid="453f5246-3bf2-4bf7-a9ea-e581a915f08d" Name="Teacher"/>
+	</Enumerations>
+	<ReferenceEntityEntities xsi:type="csharpbotEntity:ReferenceOneToMany"  Uuid="e47919e7-5bc6-43f5-907f-60aa51ab347b" Name="Achievements" OppositeName="Students" TargetOptional="true" SourceOptional="true" Source="277302f1-6e6d-4374-ab5a-ffd00e7094a7" Target="d5dbbdae-e4c9-4e60-b7be-5efe504f3502"/>
+	<ReferenceEntityEntities xsi:type="csharpbotEntity:ReferenceOneToMany"  Uuid="6afd4824-4e39-4f02-a18e-798b2ceba8cb" Name="Assessment Notes" OppositeName="Assessments" TargetOptional="true" SourceOptional="true" Source="63f4e5df-d663-4167-8fed-7aba4102e740" Target="948061f1-2664-4eb1-8ae6-de7a5564e3b5"/>
+	<ReferenceEntityEntities xsi:type="csharpbotEntity:ReferenceOneToMany"  Uuid="57203322-3a8e-4c77-bb9e-77b705f89e33" Name="Assessment Notes" OppositeName="Staff" TargetOptional="true" SourceOptional="true" Source="569ce52d-b8d9-4d63-a470-c9d66bedaa23" Target="948061f1-2664-4eb1-8ae6-de7a5564e3b5"/>
+	<ReferenceEntityEntities xsi:type="csharpbotEntity:ReferenceOneToMany"  Uuid="1af147b1-45f7-4fce-b48f-0f980dcf48ee" Name="Assessments" OppositeName="Students" TargetOptional="true" SourceOptional="true" Source="277302f1-6e6d-4374-ab5a-ffd00e7094a7" Target="63f4e5df-d663-4167-8fed-7aba4102e740"/>
+	<ReferenceEntityEntities xsi:type="csharpbotEntity:ReferenceOneToMany"  Uuid="f8b89f67-9528-4e3d-9382-d5dcf5c63d31" Name="Comments" OppositeName="Assessments" TargetOptional="true" SourceOptional="true" Source="63f4e5df-d663-4167-8fed-7aba4102e740" Target="318813d4-e6e1-44b3-a952-1eaf5d802026"/>
+	<ReferenceEntityEntities xsi:type="csharpbotEntity:ReferenceOneToMany"  Uuid="453b5fa8-6d3c-4bb7-be65-45ea8b47f3c9" Name="Staffs" OppositeName="Address" TargetOptional="true" SourceOptional="true" Source="eee87414-9c29-4bd5-9b19-3dfa7e9690b2" Target="569ce52d-b8d9-4d63-a470-c9d66bedaa23"/>
+	<ReferenceEntityEntities xsi:type="csharpbotEntity:ReferenceOneToMany"  Uuid="fdb93235-ab46-4a94-836e-f7b0f8d7de6d" Name="Students" OppositeName="Address" TargetOptional="true" SourceOptional="true" Source="eee87414-9c29-4bd5-9b19-3dfa7e9690b2" Target="277302f1-6e6d-4374-ab5a-ffd00e7094a7"/>
+</csharpbotEntity:EntityModel>
